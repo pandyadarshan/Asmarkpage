@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASMARK ENGINEERS</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+    <div id="myDrawer" class="drawer">
+        <span class="close-btn" onclick="closeDrawer()">&times;</span>
+        <a href="#" onclick="closeDrawer()">Home</a>
+        <a href="#services" onclick="closeDrawer()">Services</a>
+        <a href="#products" onclick="closeDrawer()">Products</a>
+        <a href="#aboutus" onclick="closeDrawer()">About Us</a>
+        <a href="#contactus" onclick="closeDrawer()">Contact Us</a>
+    </div>
+
+
+    <header id="navbar">
+        <span class="hamburger-icon" onclick="openDrawer()">
+            <i class="fas fa-bars fa-2x"></i>
+        </span>
+        <div class="logo">
+            <img src="./H logo2a-01.png" alt="Mechanical Logo" />
+        </div>
+
+        <div class="nevbar-right ">
+            <div class="navbar-item"><a href="#">Home</a></div>
+            <div class="navbar-item"><a href="#services">Services</a></div>
+            <div class="navbar-item"><a href="#products">Products</a></div>
+            <div class="navbar-item"><a href="#aboutus">About Us</a></div>
+            <div class="navbar-item"><a href="#contactus">Contact Us</a></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="background-container">
+            <div class="background-image" style="background-image: url('./homeBack/slider_1.png');">
+                <div class="overlay">
+                    <div class="text-start container">
+                        <div class="banner-text">High Performance, Superior Quality.</div>
+                        <p class="banner-para">ASMARK ENGINEERS: Your Last Destination for Precision Machining Work.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="background-image" style="background-image: url('./homeBack/slider-12.jpg');">
+                <div class="overlay">
+                    <div class="text-start container">
+                        <div class="banner-text">Precision Crafted, Performance Driven.</div>
+                        <p class="banner-para">Elevating Standards in Mechanical Spare Parts Manufacturing.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="background-image" style="background-image: url('./homeBack/slider-13.jpg');">
+                <div class="overlay">
+                    <div class="text-start container">
+                        <div class="banner-text">Excellence in Every Cut.</div>
+                        <p class="banner-para">Where Innovation Meets the Finest Machining Technology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="background-image" style="background-image: url('./homeBack/slider-14.jpg');">
+                <div class="overlay">
+                    <div class="text-start container">
+                        <div class="banner-text">Where Precision Meets Durability.</div>
+                        <p class="banner-para">Crafting Components That Last - ASMARK ENGINEERS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-container" onclick="smoothScrollTo()">
+            <span class="explore-font">Explore</span>
+            <div class="scroll-arrow"></div>
+            <div class="scroll-arrow"></div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="aboutus" class="about-section">
+        <div class="container">
+            <div class="common-title" id="about-us-title">About Us</div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="about-image">
+                        <img src="./about.jpg" alt="About Us Image" />
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="about-content">
+                        <p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At <strong>ASMARK ENGINEERS</strong>, we really get the needs of the steel industry. Our crew, packed with people who've been doing engineering and making stuff for a long time, loves tackling tough jobs and making them wins for everyone involved. We aim to give more than just quick fixes; we're here to make a real difference for our clients.
+                        </p>
+                        <br/>
+                        <p>     &nbsp;&nbsp; &nbsp;&nbsp;     When it comes to big projects for steel plants, we take care of everything from start to finish. But it's not just about the work we do; it's also about helping your team get better at what they do. We share what we know, so your project isn't just successful now, but your team is set up for success in the future too. With ASMARK ENGINEERS, it's all about building strong connections and making sure we're there for you at every turn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="container" id="products">
+        <div class="align-items-center d-flex justify-content-between">
+            <div class="common-title">Our Products</div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="openDropDown()"
+                        onblur="closeDropDown()">
+                    Dropdown
+                </button>
+                <div class="dropdown-content">
+                    <a class="tablink active" onclick="openTab(event, 'tab1')">Oil Pumps</a>
+                    <a class="tablink" onclick="openTab(event, 'tab2')">Casting Components</a>
+                    <a class="tablink" onclick="openTab(event, 'tab3')">Aluminium  Components</a>
+                    <a class="tablink" onclick="openTab(event, 'tab4')">Railway Components</a>
+                    <a class="tablink" onclick="openTab(event, 'tab5')">Railway Suspension</a>
+                    <a class="tablink" onclick="openTab(event, 'tab6')">Brass Components PARTS</a>
+                    <a class="tablink" onclick="openTab(event, 'tab7')">Cylinder Liners PARTS</a>
+                    <a class="tablink" onclick="openTab(event, 'tab8')">Transmission Components</a>
+                    <a class="tablink" onclick="openTab(event, 'tab9')">Stainless Steel Fabrication</a>
+                    <a class="tablink" onclick="openTab(event, 'tab10')">Aluminium High Pressure Die Casting Component</a>
+                    <a class="tablink" onclick="openTab(event, 'tab11')">Hydraulic Parts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="tabs">
+                <button class="tablink active" onclick="openTab(event, 'tab1')">
+                    Oil Pumps</>
+                    <button class="tablink" onclick="openTab(event, 'tab2')">Casting Components</button>
+                    <button class="tablink" onclick="openTab(event, 'tab3')">Aluminium  Components</button>
+                    <button class="tablink" onclick="openTab(event, 'tab4')">Railway Components</button>
+                    <button class="tablink" onclick="openTab(event, 'tab5')">Railway Suspension</button>
+                    <button class="tablink" onclick="openTab(event, 'tab6')">Brass Components PARTS</button>
+                    <button class="tablink" onclick="openTab(event, 'tab7')">Cylinder Liners PARTS</button>
+                    <button class="tablink" onclick="openTab(event, 'tab8')">Transmission Components</button>
+                    <button class="tablink" onclick="openTab(event, 'tab9')">Stainless Steel Fabrication</button>
+                    <button class="tablink" onclick="openTab(event, 'tab10')">Aluminium High Pressure Die Casting Component</button>
+                    <button class="tablink" onclick="openTab(event, 'tab11')">Hydraulic Parts</button>
+            </div>
+
+            <div class="content">
+
+                <div id="tab1" class="tab-content active">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./olipumps/oil-pump-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./olipumps/oil-pump-4.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./olipumps/oil-pump-5.jpg" />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab2" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp-3.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp-4.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp-6.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./castingcomp/casting-comp.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab3" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumcom/alum-com-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumcom/alum-com-3.jpg" />
+
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumcom/alum-com-main.jpg" />
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./railwaycom/railway-components-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./railwaycom/railway-components-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./railwaycom/railway-components-3.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="tab5" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./suscom/cylinder-liners.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./suscom/railway-suspension.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./suscom/suspension-component.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="tab6" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./brasscom/brass-comp-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./brasscom/brass-comp-3.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./brasscom/brass-comp.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./brasscom/brass-component.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab7" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./cylline/cylinder-liners-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./cylline/cylinder-liners.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab8" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./trancom/transmission-components.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab9" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./stainstlfab/stainless-steel-fabrication-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./stainstlfab/stainless-steel-fabrication-2.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab10" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting-3.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting-4.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting-5.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./alumHigPreDieCas/aluminium-high-pressure-die-casting.jpg" />
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab11" class="tab-content">
+                    <div class="product-grid">
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/aluminium-high-pressure-die-casting-5.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/hydraulic-parts-1.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/hydraulic-parts-2.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/hydraulic-parts-3.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/hydraulic-parts-4.jpg" />
+                            </div>
+                            <div class="grid-item">
+                                <img class="thumbnail" src="./hydPar/hydraulic-parts.jpg" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="middle-banner container">
+        At ASMARK ENGINEERS, we're all about quality. We make top-notch stainless steel shafts, spare parts for engines, and strong mild steel sleeves. Our products, like the Cast Iron bearing caps, are built to last and handle tough jobs. We pay close attention to every little detail, so you can count on what we make to be really reliable. When you need parts that keep things running smooth, we've got your back.
+    </div>
+
+    <div class="container" id="services">
+        <section id="explore" class="industries-serve">
+            <div class="common-title indst" id="indst">Industries We Serve</div>
+            <div class="grid-container product-grid-container" id="industries-container">
+
+
+                <div class="grid-item">
+                    <img src="./auto-motive.jpg" />
+                    <div class="image-overlay">Automotive Industry</div>
+                </div>
+                <div class="grid-item">
+                    <img src="./tractor-product.jpg" />
+                    <div class="image-overlay">Product For Agriculture  Industry</div>
+                </div>
+                <div class="grid-item">
+                    <img src="./railway-product.jpg" />
+                    <div class="image-overlay">Product For Railway Industry</div>
+                </div>
+                <div class="grid-item">
+                    <img src="./earth-moving.jpg" />
+                    <div class="image-overlay">Product For Earth Moving Equipment</div>
+                </div>
+                <div class="grid-item">
+                  <img src="./electronic industries/electronic.jpg" />
+                  <div class="image-overlay">Electronics</div>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./Valve and pump/valve.jpg" />
+                    <div class="image-overlay">VALVE & PUMP</div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="./Firefighting/firefighter.jpg" />
+                    <div class="image-overlay">FIRE FIGHTING</div>
+                  </div>
+                  <div class="grid-item">
+                    <img src="./General engineering/genralengineering.jpg" />
+                    <div class="image-overlay">GENERAL ENGINEERING</div>
+                  </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="container">
+        <div class="common-title">Why Choose Us?</div>
+        <ul class="vertical-line">
+            <li>
+                <strong>Outstanding Craftsmanship</strong> - Every project showcases our commitment to not just meet but redefine industry standards with superior craftsmanship.
+            </li>
+            <li>
+                <strong>Unmatched Quality Work</strong> - We strive for excellence, ensuring each service and job surpasses the highest quality expectations.
+            </li>
+            <li>
+                <strong>Personalized Aftercare Services</strong> - Tailored support to meet the unique challenges and requirements of each client.
+            </li>
+            <li>
+                <strong>Punctual Delivery Every Time</strong> - On-time delivery is our standard practice, reflecting our dedication to your supply chain success.
+            </li>
+        </ul>
+        <div class="tags-container">
+            <span class="tag">CNC - VMC Machining</span>
+            <span class="tag">Designing</span>
+            <span class="tag">Quality Control</span>
+            <span class="tag">Reverse Engineering</span>
+            <span class="tag">Assembling</span>
+            <span class="tag">Technical Support</span>
+        </div>
+        <ul class="vertical-line">
+            <li>
+                <strong>Consistent Professionalism</strong> - Our passion, attention to detail, and commitment to continuous improvement stand at the heart of all we do.
+            </li>
+        </ul>
+    </section>
+    
+
+    <section class="container d-flex flex-xl-row flex-lg-row flex-sm-column flex-column flex-md-column my-3 gap-3">
+        <div class="w-xl-50 w-sm-100 w-lg-50 w-md-100">
+            <div class="common-title">Vision</div>
+
+            <ul class="vertical-line">
+                <li>
+At <strong>ASMARK ENGINEERS</strong>, our vision is to establish ourselves as the most reliable, long-term subcontracting manufacturing partner for modern industrial companies both in India and internationally. We aim to play a significant role in the innovation and advancement of industries by contributing high-value solutions and services that go beyond expectations.
+                </li>
+            </ul>
+        </div>
+        <div class="align-items-center d-flex justify-content-center w-xl-50 w-lg-50 w-sm-100 w-md-100"><img src="./copy.jpg" height="400" /></iv>
+    </section>
+
+    <footer class="footer" id="contactus">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <div class="footer-address">
+                        <p>
+                            Shed No 3, Survey No. 35, Jay Gopal Complex, B/h Satyanarayan
+                            Way-bridge,Sardar chowk, Vavadi, Rajkot, Gujarat.
+                        </p>
+                    </div>
+                    <div class="footer-contact-info">
+                        <p>Email: <a style="text-decoration: none;"  href="mailto:sales@asmarkengineers.com">sales@asmarkengineers.com</a></p>
+                        <p>Phone: <a style="text-decoration: none;" href="tel:+917359543469">+91 73595 43469</a>
+                            <a  style="text-decoration: none;"  href="tel:+919033906063">+91 90339 06063</a>
+                        </p>  
+                      
+                    </div>
+                    <div class="footer-social-links mb-3">
+                        <a href="https://wa.me/7359543469?text=hi"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/asmark-engineers/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://g.co/kgs/k4xaWDJ"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact-form" action="mailto:asmarkengineers@gmail.com" method="post" enctype="text/plain">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                      </div>
+                      <div class="form-group my-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                      </div>
+                      <div class="form-group my-3">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                      </div>
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                      </div>
+                      <input type="hidden" name="body" id="emailBody" value="">
+                      <button type="submit" class="btn btn-primary my-3" onclick="formatMailBody()">Send Message</button>
+                    </form>
+                  </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h3>Our Location</h3>
+                    <div id="map" class="footer-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.197858942607!2d70.79493997506732!3d22.23257047973539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cbbd09694945%3A0x1f9a7058682f323c!2sAsmark%20Engineers!5e0!3m2!1sen!2sin!4v1709898040472!5m2!1sen!2sin"  width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="image-viewer-overlay" id="image-viewer-overlay" onclick="closeImageViewer()">
+        <span class="close" id="close">&times;</span>
+        <img class="expanded-image" id="expanded-image" src="" alt="Expanded Image">
+    </div>
+    <div class="footer-bottom text-center">
+        <div class="container footer-inner">
+            <p class="mb-0">&copy;All rights reserved by ASMARK ENGINEERS.</p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

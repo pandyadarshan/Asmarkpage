@@ -889,17 +889,7 @@ ul.vertical-line li::before {
   max-height: 405px;
   /* Adjust as needed */
 }
-
-
-
-
-
-
-
-
-
-
-/*  */
+  
 
 .image-viewer-overlay {
   position: fixed;
@@ -937,29 +927,4 @@ ul.vertical-line li::before {
 
 
 
-
-/* information */
-/* Extra small devices (phones) - less than 576px */
-@media (max-width: 575.98px) {
-  /* Your CSS rules for extra small devices here */
-}
-
-/* Small devices (tablets) - 576px and up */
-@media (min-width: 576px) {
-  /* Your CSS rules for small devices here */
-}
-
-/* Medium devices (desktops) - 768px and up */
-@media (min-width: 768px) {
-  /* Your CSS rules for medium devices here */
-}
-
-/* Large devices (desktops) - 992px and up */
-@media (min-width: 992px) {
-  /* Your CSS rules for large devices here */
-}
-
-/* Extra large devices (large desktops) - 1200px and up */
-@media (min-width: 1200px) {
-  /* Your CSS rules for extra large devices here */
-}
+ 

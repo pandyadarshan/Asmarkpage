@@ -71,8 +71,6 @@ function closeDrawer() {
 
 const thumbnails = document.querySelectorAll(".thumbnail");
 const overlay = document.getElementById("image-viewer-overlay");
-const expandedImage = document.getElementById("expanded-image");
-const close = document.getElementById("close");
 
 thumbnails.forEach((thumbnail) => {
   thumbnail.addEventListener("click", () => {
@@ -82,10 +80,6 @@ thumbnails.forEach((thumbnail) => {
     overlay.style.opacity = 1;
     overlay.style.zIndex = 99999;
   });
-});
-close.addEventListener("click", () => {
-  overlay.style.opacity = 0;
-  overlay.style.zIndex = -1;
 });
 
 function toggleExpansion() {

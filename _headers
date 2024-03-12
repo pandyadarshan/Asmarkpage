@@ -1,0 +1,13 @@
+# Default cache policy for HTML pages
+/*.html
+  Cache-Control: max-age=0, must-revalidate
+
+# Caching policy for static assets
+/assets/css/*
+  Cache-Control: max-age=604800, immutable
+
+/assets/js/*
+  Cache-Control: max-age=604800, immutable
+
+/images/*
+  Cache-Control: max-age=604800, immutable

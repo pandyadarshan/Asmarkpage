@@ -26,7 +26,6 @@ header {
   z-index: 1000;
   min-height: 90px;
   transition: background-color 0.3s ease;
-  /* Transition for background color change */
 
   .logo img {
     max-width: 177px;
@@ -206,19 +205,6 @@ header {
 }
 
 .industries-serve {
-  .expand-button {
-    /* display: none;
-
-    @media (max-width: 768px) { */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 16px;
-      font-weight: bolder;
-      cursor: pointer;
-      margin-top: 1rem;
-    /* } */
-  }
 
   .grid-container {
     display: grid;
@@ -242,9 +228,7 @@ header {
   }
 
   .product-grid-container {
-    /* @media (max-width: 768px) { */
        overflow: hidden;
-    /* } */
   }
 
   .grid-item {
@@ -377,6 +361,9 @@ header {
   font-size: 18px;
   color: #666;
   line-height: 1.6;
+  text-align: justify; 
+  text-indent: 1.5em;
+  margin-bottom: 1em;
 }
 
 /* Animation Effects */
@@ -425,11 +412,8 @@ header {
 .tabs {
   display: flex;
   flex-direction: column;
-  /* Display tabs vertically */
   align-items: flex-end;
-  /* Align tabs to the start of the column */
   margin-right: 20px;
-
   @media (max-width: 768px) {
     display: none;
   }
@@ -442,13 +426,10 @@ header {
   cursor: pointer;
   padding: 10px 20px;
   margin: 5px 0;
-  /* Adjust margin between tabs */
   font-size: 14px;
   font-weight: 500;
   border-radius: 5px 0 0 5px;
-  /* Rounded corners on the left side */
   position: relative;
-  
   width: 250px;
 
 }
@@ -469,7 +450,6 @@ header {
 
 .content {
   flex: 1;
-  /* Take remaining space */
 }
 
 .tab-content {
@@ -643,13 +623,9 @@ ul.vertical-line li::before {
   top: 0;
   left: 0;
   width: 8px;
-  /* Width of the vertical line */
   height: 100%;
-  /* Make the line extend the full height of the list item */
   background-color: #007bff;
-  /* Color of the vertical line */
   margin-right: 10px;
-  /* Adjust this value as needed to create space between the line and the content */
 }
 
 .tags-container {
@@ -667,9 +643,6 @@ ul.vertical-line li::before {
     font-size: 21px;
     font-weight: 500;
     text-transform: uppercase;
-    /* margin-right: 10px; */
-    /* margin-bottom: 10px; */
-    /* box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2); */
     transition: transform 0.2s ease-in-out, border-color 0.3s ease-in-out;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -684,7 +657,6 @@ ul.vertical-line li::before {
   .tag:hover {
     transform: translateY(-2px);
     border-color: #5fa8ff;
-    /* Lighter color on hover */
   }
 
 
@@ -708,7 +680,7 @@ ul.vertical-line li::before {
 .footer .contact-form textarea {
   background-color: #fff;
   border: 1px solid #007bff;
-  color: #007bff;
+  color: #007bff !important;
 }
 
 .footer .contact-form input:focus,
@@ -736,7 +708,6 @@ ul.vertical-line li::before {
 
 .footer-map {
   height: 200px;
-  /* Adjust height as needed */
 }
 
 .footer-address {
@@ -763,9 +734,6 @@ ul.vertical-line li::before {
       align-items: center;
     }
   }
-  /* @media (max-width: 768px) {
-    display: none;
-  } */
 }
 
 
@@ -775,7 +743,6 @@ ul.vertical-line li::before {
   width: 0;
   position: fixed;
   z-index: 1031;
-  /* higher than bootstrap modal */
   top: 0;
   left: 0;
   background-color: #fff;
@@ -827,7 +794,6 @@ ul.vertical-line li::before {
 
 
 /* dropdown */
-/* Style the dropdown button */
 /* Style the dropdown button */
 .dropbtn {
   background-color: #3498db;
@@ -887,7 +853,6 @@ ul.vertical-line li::before {
 .dropdown:hover .dropdown-content {
   opacity: 1;
   max-height: 405px;
-  /* Adjust as needed */
 }
   
 
@@ -944,11 +909,13 @@ ul.vertical-line li::before {
   background-image: url('./homeBack/slider-14.webp');
 }
 
+.fa-icon {
+  width: 1em; 
+  height: 1em;
+  fill: currentColor;
+}
 
-
-
-
-
-
-
- 
+.fa-icon-2x {
+  width: 2em; 
+  height: 2em;
+}

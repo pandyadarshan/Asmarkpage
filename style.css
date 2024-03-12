@@ -920,6 +920,30 @@ ul.vertical-line li::before {
   cursor: pointer;
 }
 
+.remove_text_decoration{
+  text-decoration: none;
+}
+
+.map_style{
+  border:0;
+}
+
+.background-slider-1 {
+  background-image: url('./homeBack/slider_1.webp');
+}
+
+.background-slider-12 {
+  background-image: url('./homeBack/slider-12.webp');
+}
+
+.background-slider-13 {
+  background-image: url('./homeBack/slider-13.webp');
+}
+
+.background-slider-14 {
+  background-image: url('./homeBack/slider-14.webp');
+}
+
 
 
 

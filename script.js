@@ -1,7 +1,3 @@
-window.onload = function () {
-  document.querySelector(".dropbtn").innerHTML = "Oil Pumps";
-};
-
 window.onscroll = function () {
   changeNavbarColor();
 };
@@ -27,15 +23,12 @@ function smoothScrollTo(targetPosition, duration) {
 }
 
 function openTab(evt, tabName) {
-  closeDropDown();
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tab-content");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].classList.remove("active");
   }
   document.getElementById(tabName).classList.add("active");
-  let innerText = evt.target.innerHTML;
-  document.querySelector(".dropbtn").innerHTML = innerText;
 
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
@@ -95,11 +88,6 @@ function toggleExpansion() {
   }
 }
 
-function closeDropDown() {
-  let dd = document.querySelector(".dropdown-content");
-  dd.style.opacity = 0;
-  dd.style.maxHeight = "0px";
-}
 function openDropDown() {
   let dd = document.querySelector(".dropdown-content");
   dd.style.opacity = 1;

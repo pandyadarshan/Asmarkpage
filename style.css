@@ -1,20 +1,14 @@
 html {
   scroll-behavior: smooth;
-
 }
-
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
-
 a {
   color: unset !important;
 }
-
- 
-
 header {
   background-color: white;
   color: #fff;
@@ -365,7 +359,6 @@ header {
   margin-bottom: 1em;
 }
 
-/* Animation Effects */
 .about-section {
   opacity: 1;
   transition: opacity 2s, transform 2s;
@@ -374,8 +367,6 @@ header {
 .about-section.active {
   opacity: 1;
 }
-
-
 
 .middle-banner {
   margin-top: 4rem;
@@ -389,25 +380,6 @@ header {
 
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .tabs {
   display: flex;
   flex-direction: column;
@@ -469,10 +441,6 @@ header {
     opacity: 1;
   }
 }
-
-
-
-
 .background-container {
   position: relative;
   width: 100%;
@@ -491,9 +459,6 @@ header {
   opacity: 0;
   transition: opacity 4s ease;
 }
-
-
-
 .product-grid {
   .grid-container {
     display: grid;
@@ -542,8 +507,6 @@ header {
     }
   }
 }
-
-
 .material-grid {
   .grid-container {
 
@@ -582,40 +545,26 @@ header {
       align-items: center;
       font-size: 20px;
       letter-spacing: 2px;
-
-
     }
   }
 }
-
-
 ul.vertical-line {
   list-style: none;
   padding: 0;
 }
-
-/* Style for the list items */
 ul.vertical-line li {
   position: relative;
   padding-left: 20px;
-  /* Adjust this value as needed */
   margin-bottom: 3rem;
-  /* Adjust this value as needed */
   font-size: 25px;
   @media (max-width: 499px) {
     font-size: 19px;
-
   }
 
   @media (min-width: 500px) and (max-width: 768px) {
-
     font-size: 21px;
-
-
   }
 }
-
-/* Style for the vertical line */
 ul.vertical-line li::before {
   content: "";
   position: absolute;
@@ -626,7 +575,6 @@ ul.vertical-line li::before {
   background-color: #007bff;
   margin-right: 10px;
 }
-
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -649,46 +597,32 @@ ul.vertical-line li::before {
       font-size: 15px;
     }
     }
-
- 
   }
-
   .tag:hover {
     transform: translateY(-2px);
     border-color: #5fa8ff;
   }
-
-
-
-
-/* footer */
 .footer {
   background-color: #007bff;
   color: #fff;
   padding: 50px 0;
-
-
 }
-
 .footer h3,
 .footer p {
   color: #fff;
 }
-
 .footer .contact-form input,
 .footer .contact-form textarea {
   background-color: #fff;
   border: 1px solid #007bff;
   color: #007bff !important;
 }
-
 .footer .contact-form input:focus,
 .footer .contact-form textarea:focus {
   background-color: #f8f9fa;
   border: 1px solid #007bff;
   color: #007bff;
 }
-
 .footer .contact-form button {
   background-color: #fff;
   border: none;
@@ -697,7 +631,6 @@ ul.vertical-line li::before {
 
   &:focus{
     color: #007bff;
-
   }
 }
 
@@ -734,9 +667,6 @@ ul.vertical-line li::before {
     }
   }
 }
-
-
-/* drawer css */
 .drawer {
   height: 100%;
   width: 0;
@@ -749,7 +679,6 @@ ul.vertical-line li::before {
   transition: 0.5s;
   padding-top: 60px;
 }
- 
 
 .drawer a {
   padding: 10px 15px;
@@ -774,8 +703,6 @@ ul.vertical-line li::before {
   font-size: 36px;
   margin-left: 50px;
 }
-
-/* Hamburger icon */
 .hamburger-icon {
   color: #007bff;
   cursor: pointer;
@@ -787,74 +714,6 @@ ul.vertical-line li::before {
     align-items: center;
   }
 }
-
-
-
-
-
-/* dropdown */
-/* Style the dropdown button */
-.dropbtn {
-  background-color: #3498db;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  display: none;
-  overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 233px;
-    min-width: 100px;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-}
-
-/* Style the dropdown container */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: block;
-  position: absolute;
-  top: 100%;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  overflow: hidden;
-  transition: opacity 0.3s, max-height 0.3s;
-  max-height: 0;
-  z-index: 999;
-  right: 0;
-}
-
-/* Style the links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  opacity: 1;
-  max-height: 405px;
-}
-  
-
 .image-viewer-overlay {
   position: fixed;
   top: 0;
@@ -867,7 +726,6 @@ ul.vertical-line li::before {
   justify-content: center;
   align-items: center;
   transition-duration: 300ms;
-
 }
 
 .expanded-image {
@@ -917,4 +775,33 @@ ul.vertical-line li::before {
 .fa-icon-2x {
   width: 2em; 
   height: 2em;
+}
+
+.product-tags{
+  display: none; 
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .tag-item{
+    color: #007bff;
+    padding: 5px 15px;
+    border: 2px solid #007bff;
+    flex: none;
+    text-align: center;
+    font-size: 15px !important;
+    white-space: nowrap;
+    border-radius: 5px;
+    font-size: 21px;
+    background-color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .tag-item.active{
+    background-color: #007bff;
+    color: white;
+  }
 }
